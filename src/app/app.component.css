@@ -1,0 +1,16 @@
+.home {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: relative;
+  width: 1440px;
+  height: 960px;
+
+  /* Base/White */
+
+  background: #ffffff;
+}

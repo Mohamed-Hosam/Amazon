@@ -1,0 +1,37 @@
+<div class="main">
+  <div class="header">
+    <div class="container">
+      <div class="page-header">
+        <div class="content">
+          <div class="header-text-and-supporting-text">
+            <p class="header-text">Electronics</p>
+            <p class="header-supporting-text">Welcome back, Olivia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-container">
+        <table class="table">
+          <!-- <tr>
+            <th>Electronic Name</th>
+            <th>Price</th>
+          </tr> -->
+          <tr clas="table-content" *ngFor="let item of electronics">
+            <td class="table-name-area">
+              <p class="table-name-text">{{ item.name }}</p>
+            </td>
+            <td class="table-price-area">
+              <p class="table-price-text">${{ item.price }}</p>
+            </td>
+            <td class="table-buy-content">
+              <button class="table-button">
+                <p class="table-button-text">Buy now</p>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

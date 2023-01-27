@@ -30,9 +30,6 @@ mongoose
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.log(err))
 
-app.use("/api/food", food);
-app.use("/api/electronic", electronic);
-
   // added cors access
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*')
@@ -41,6 +38,9 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Headers', '*')
   next()
 })
+
+app.use("/api/food", food);
+app.use("/api/electronic", electronic);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'))
