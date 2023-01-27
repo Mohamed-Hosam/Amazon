@@ -96,60 +96,72 @@
 .sidebar-header-logo {
   /* Logo */
 
+  /* Auto layout */
 
-/* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
 
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
+  width: 142px;
+  height: 32px;
 
-width: 142px;
-height: 32px;
+  /* Inside auto layout */
 
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .sidebar-header-logo-logowrap {
   /* Logo wrap */
 
+  width: 142px;
+  height: 32px;
 
-width: 142px;
-height: 32px;
+  /* Inside auto layout */
 
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .sidebar-header-logo-logowrap-text {
   /* Text */
 
+  /* position: absolute; */
+  left: 31.69%;
+  right: -3.52%;
+  top: 0%;
+  bottom: 0%;
 
-/* position: absolute; */
-left: 31.69%;
-right: -3.52%;
-top: 0%;
-bottom: 0%;
+  font-family: "SF Compact Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23.7576px;
+  line-height: 36px;
+  /* or 150% */
 
-font-family: 'SF Compact Text';
-font-style: normal;
-font-weight: 600;
-font-size: 23.7576px;
-line-height: 36px;
-/* or 150% */
+  color: #fe6215;
+}
 
+.sidebar-header-logo-logowrap-text2 {
+  /* Text */
 
-color: #FE6215;
+  /* position: absolute; */
+  left: 31.69%;
+  right: -3.52%;
+  top: 0%;
+  bottom: 0%;
 
+  font-family: "SF Compact Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23.7576px;
+  line-height: 36px;
+  /* or 150% */
+
+  color: #101828;
 }
 
 .navigation {
@@ -315,153 +327,140 @@ color: #FE6215;
 .sidebar-footer {
   /* Footer */
 
+  /* Auto layout */
 
-/* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 16px 32px;
+  gap: 24px;
 
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px 16px 32px;
-gap: 24px;
+  width: 280px;
+  height: 96px;
 
-width: 280px;
-height: 96px;
+  /* Inside auto layout */
 
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
 .sidebar-footer-account {
   /* Account */
 
+  box-sizing: border-box;
 
-box-sizing: border-box;
+  /* Auto layout */
 
-/* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px 32px 0px 8px;
+  gap: 47px;
+  isolation: isolate;
 
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 24px 32px 0px 8px;
-gap: 47px;
-isolation: isolate;
+  width: 248px;
+  height: 64px;
 
-width: 248px;
-height: 64px;
+  /* Gray/200 */
 
-/* Gray/200 */
+  border-top: 1px solid #eaecf0;
 
-border-top: 1px solid #EAECF0;
+  /* Inside auto layout */
 
-/* Inside auto layout */
-
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: 0;
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
 .sidebar-footer-avatar-label-group {
   /* Avatar label group */
 
+  /* Auto layout */
 
-/* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
 
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 12px;
+  width: 208px;
+  height: 40px;
 
-width: 208px;
-height: 40px;
+  /* Inside auto layout */
 
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 1;
-z-index: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  z-index: 0;
 }
 
 .sidebar-footer-avatar-text-and-supportingtext {
   /* Text and supporting text */
 
+  /* Auto layout */
 
-/* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
 
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
+  width: 157px;
+  height: 40px;
 
-width: 157px;
-height: 40px;
+  /* Inside auto layout */
 
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .sidebar-footer-avatar-text {
   /* Text */
 
+  width: 74px;
+  height: 20px;
 
-width: 74px;
-height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+  /* Gray/700 */
 
+  color: #344054;
 
-/* Gray/700 */
+  /* Inside auto layout */
 
-color: #344054;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .sidebar-footer-avatar-textsuport {
- /* Supporting text */
+  /* Supporting text */
 
+  width: 157px;
+  height: 20px;
 
-width: 157px;
-height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+  /* Gray/500 */
 
+  color: #667085;
 
-/* Gray/500 */
+  /* Inside auto layout */
 
-color: #667085;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }

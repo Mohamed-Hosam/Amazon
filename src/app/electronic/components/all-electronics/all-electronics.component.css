@@ -132,57 +132,51 @@
 .header-text {
   /* Text */
 
+  width: 918px;
+  height: 38px;
 
-width: 918px;
-height: 38px;
+  /* Display sm/Medium */
 
-/* Display sm/Medium */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height, or 127% */
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 38px;
-/* identical to box height, or 127% */
+  color: #101828;
 
+  /* Inside auto layout */
 
-color: #101828;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
 .header-supporting-text {
   /* Supporting text */
 
+  width: 918px;
+  height: 24px;
 
-width: 918px;
-height: 24px;
+  /* Text md/Normal */
 
-/* Text md/Normal */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
+  color: #667085;
 
+  /* Inside auto layout */
 
-color: #667085;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
 .section {
@@ -424,9 +418,9 @@ flex-grow: 0; */
 
   /* Inside auto layout */
 
-  flex: none;
+  /* flex: none;
   order: 3;
-  flex-grow: 0;
+  flex-grow: 0; */
 }
 
 .table-button-text {
@@ -436,7 +430,9 @@ flex-grow: 0; */
   height: 20px;
 
   /* Text sm/Medium */
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -448,7 +444,7 @@ flex-grow: 0; */
 
   /* Inside auto layout */
 
-  flex: none;
+  /* flex: none;
   order: 1;
-  flex-grow: 0;
+  flex-grow: 0; */
 }

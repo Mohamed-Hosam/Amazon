@@ -20,6 +20,10 @@ export class AllElectronicsComponent {
   getElectronics(){
     this.service.getAllElectronics().subscribe((res:any) =>{
       this.electronics =res.data
+    },
+    error => {
+      alert("Error " + error.status)
+      // console.log(error)
     })
   }
 
