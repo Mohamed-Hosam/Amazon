@@ -1,10 +1,41 @@
 <div class="sidebar-navigation">
   <div class="content">
     <div class="nav">
-      <div class="header">
-        <p>H!There.</p>
-        <button class="search" routerLink="/food">Food</button>
-        <button class="search" routerLink="/electronics">Electronics</button>
+      <div class="sidebar-header">
+        <div class="sidebar-header-logo">
+          <div class="sidebar-header-logo-logowrap">
+            <p class="sidebar-header-logo-logowrap-text">H!There.</p>
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <button routerLink="/food" class="navigation-food-nav-item-base">
+          <div class="navigation-food-content">
+            <p class="navigation-food-text">Food</p>
+          </div>
+        </button>
+        <button
+          routerLink="/electronics"
+          class="navigation-electronics-nav-item-base"
+        >
+          <div class="navigation-electronics-content">
+            <p class="navigation-electronics-text">Electronics</p>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-account">
+        <div class="sidebar-footer-avatar-label-group">
+          <div class="sidebar-footer-avatar-text-and-supportingtext">
+            <div class="sidebar-footer-avatar-text">
+              <p>Olivia Rhye</p>
+            </div>
+            <div class="sidebar-footer-avatar-texsupport">
+              <p>Olivia@evarostudio.com</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
