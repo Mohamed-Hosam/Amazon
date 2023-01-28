@@ -23,7 +23,6 @@ export class AllElectronicsComponent {
     },
     error => {
       alert("Error " + error.status)
-      // console.log(error)
     })
   }
 

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FoodService } from '../../services/food.service';
 
 @Component({
   selector: 'app-all-food',
@@ -7,4 +8,20 @@ import { Component } from '@angular/core';
 })
 export class AllFoodComponent {
 
+  food:any[] = []
+
+constructor(private service:FoodService) { }
+
+  ngOnInit(): void{
+    this.getFood()
+  }
+
+  getFood(){
+    this.service.getAllFood().subscribe((res:any) =>{
+      this.food =res.data
+    },
+    error => {
+      alert("Error " + error.status)
+    })
+  }
 }

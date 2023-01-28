@@ -1,1 +1,48 @@
-<p>all-food works!</p>
+<div class="main">
+  <div class="header">
+    <div class="container">
+      <div class="page-header">
+        <div class="content">
+          <div class="header-text-and-supporting-text">
+            <p class="header-text">Electronics</p>
+            <p class="header-supporting-text">Welcome back, Olivia</p>
+          </div>
+        </div>
+      </div>
+      <div class="header-tabs-and-filters">
+        <div class="header-button-group">
+          <button class="header-fruits-button">
+            <span class="header-fruits-button-text">Fruits</span>
+          </button>
+          <button class="header-vegetables-button">
+            <span class="header-vegetables-button-text">Vegetables</span>
+          </button>
+        </div>
+        <div class="header-actions">
+          <button class="header-sort-button">
+            <span class="header-sort-button-text">Sort By</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-container">
+        <table class="table">
+          <tr clas="table-content" *ngFor="let item of food">
+            <td class="table-name-area">
+              <p class="table-name-text">{{ item.name }}</p>
+            </td>
+            <td class="table-price-area">
+              <p class="table-price-text">${{ item.price }}</p>
+            </td>
+            <td class="table-buy-content">
+              <button class="table-button">
+                <span class="table-button-text">Buy now</span>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
