@@ -1,21 +1,13 @@
 .main {
   /* Main */
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 32px 0px 48px;
   gap: 32px;
-
   width: 1160px;
   height: 960px;
-
   background: #fdfcfc;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 1;
@@ -23,20 +15,13 @@
 
 .header {
   /* Header section */
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
   gap: 24px;
-
   width: 1160px;
   height: 798px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   align-self: stretch;
@@ -45,20 +30,13 @@
 
 .container {
   /* Container */
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px 32px;
   gap: 24px;
-
   width: 982px;
   height: 66px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -66,20 +44,13 @@
 
 .page-header {
   /* Page header */
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 20px;
-
   width: 918px;
   height: 66px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   align-self: stretch;
@@ -88,20 +59,13 @@
 
 .content {
   /* Content */
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
-
   width: 918px;
   height: 66px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   align-self: stretch;
@@ -110,20 +74,13 @@
 
 .header-text-and-supporting-text {
   /* Text and supporting text */
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 4px;
-
   width: 918px;
   height: 66px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 1;
@@ -131,23 +88,14 @@
 
 .header-text {
   /* Text */
-
   width: 918px;
   height: 38px;
-
-  /* Display sm/Medium */
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
   line-height: 38px;
-  /* identical to box height, or 127% */
-
   color: #101828;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   align-self: stretch;
@@ -156,23 +104,14 @@
 
 .header-supporting-text {
   /* Supporting text */
-
   width: 918px;
   height: 24px;
-
-  /* Text md/Normal */
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
-
   color: #667085;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   align-self: stretch;
@@ -181,20 +120,13 @@
 
 .section {
   /* Section */
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
   gap: 24px;
-
   width: 975px;
   height: 708px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -202,20 +134,13 @@
 
 .section-container {
   /* Section Container */
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 32px;
   gap: 24px;
-
   width: 975px;
   height: 708px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   align-self: stretch;
@@ -224,23 +149,14 @@
 
 .table {
   /* Table */
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
-
   width: 911px;
   height: 708px;
-
   background: #ffffff;
   border-radius: 8px;
-  /* border: 1px solid #eaecf0; */
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   align-self: stretch;
@@ -249,21 +165,13 @@
 
 .table-content {
   /* Content */
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-
   width: 911px;
   height: 648px;
-
   background: #fdfcfc;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   align-self: stretch;
@@ -272,24 +180,13 @@
 
 .table-name-area {
   /* Table cell */
-
   box-sizing: border-box;
-
-  /* Auto layout */
-
-  /* display: flex;
-  flex-direction: row; */
   align-items: flex-start;
   padding: 16px 24px 16px 0px;
   gap: 12px;
-
   width: 582px;
   height: 72px;
-
   border-bottom: 1px solid #eaecf0;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   align-self: stretch;
@@ -298,23 +195,14 @@
 
 .table-name-text {
   /* Text */
-
   width: 71px;
   height: 20px;
-
-  /* Text sm/Medium */
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  /* identical to box height, or 143% */
-
   color: #101828;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -322,48 +210,24 @@
 
 .table-price-area {
   /* Table cell */
-
   box-sizing: border-box;
-
-  /* Auto layout */
-
-  /* display: flex;
-  flex-direction: row; */
   align-items: center;
   padding: 16px 24px;
-
   width: 209px;
   height: 72px;
-
   border-bottom: 1px solid #eaecf0;
-
-  /* Inside auto layout */
-
-  /* flex: none; */
-  /* order: 0; */
-  /* align-self: stretch; */
-  /* flex-grow: 0; */
 }
 
 .table-price-text {
   /* Text */
-
   width: 45px;
   height: 20px;
-
-  /* Text sm/Normal */
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  /* identical to box height, or 143% */
-
   color: #039855;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -371,56 +235,29 @@
 
 .table-buy-content {
   /* Table cell */
-
   box-sizing: border-box;
-
-  /* Auto layout */
-
-  /* display: flex;
-flex-direction: row; */
   align-items: flex-end;
   padding: 16px;
   gap: 4px;
-
   width: 120px;
   height: 72px;
-
   border-bottom: 1px solid #eaecf0;
-
-  /* Inside auto layout */
-  /*
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0; */
 }
 
 .table-button {
   /* Button */
-
   box-sizing: border-box;
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 8px 14px;
   gap: 8px;
-
   width: 88px;
   height: 36px;
-
   background: #fdf8f5;
   border: 1px solid #fdf2ec;
   border-radius: 8px;
-
-  /* Inside auto layout */
-
-  /* flex: none;
-  order: 3;
-  flex-grow: 0; */
 }
 
 .table-button-text {
@@ -428,8 +265,6 @@ flex-grow: 0; */
 
   width: 60px;
   height: 20px;
-
-  /* Text sm/Medium */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -438,13 +273,222 @@ flex-grow: 0; */
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  /* identical to box height, or 143% */
-
   color: #fe6215;
+}
 
-  /* Inside auto layout */
-
-  /* flex: none;
+.pagination {
+  /* Pagination */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 911px;
+  height: 60px;
+  border-top: 1px solid #eaecf0;
+  flex: none;
   order: 1;
-  flex-grow: 0; */
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.pagination-previous-button {
+  /* Button */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 86px;
+  height: 20px;
+  border: none;
+}
+
+.pagination-previous-button:active {
+  /* Button */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  background: #ddd;
+  width: 86px;
+  height: 20px;
+  border: none;
+}
+
+.pagination-previous-button:hover:not(:active) {
+  /* Button */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  background-color: #f9fafb;
+  width: 86px;
+  height: 20px;
+  border: none;
+}
+
+.previous-button-img {
+  /* arrow-left */
+  width: 20px;
+  height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.pagination-previous-button-text {
+  /* Text */
+  width: 58px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.pagination-numbers-group {
+  /* Pagination numbers */
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  width: 292px;
+  height: 40px;
+}
+
+.pagination-next-button {
+  /* Button */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 60px;
+  height: 20px;
+  border: none;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.pagination-next-button:active {
+  /* Button */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  background: #ddd;
+  width: 60px;
+  height: 20px;
+  border: none;
+}
+
+.pagination-next-button:hover:not(:active) {
+  /* Button */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  background-color: #f9fafb;
+  width: 60px;
+  height: 20px;
+  border: none;
+}
+
+.next-button-img {
+  /* arrow-right */
+  width: 20px;
+  height: 20px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.pagination-next-button-text {
+  /* Text */
+  width: 32px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.pagination-number-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  transition: background-color 0.3s;
+  display: inline-block;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.pagination-number-button:focus {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #ddd;
+  border: none;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.pagination-number-button:hover:not(:focus) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #f9fafb;
+  border: none;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.pagination-number-button-content {
+  /* Content */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  border-radius: 20px;
+}
+
+.pagination-number-button-text {
+  /* Number */
+  width: 9px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #667085;
 }

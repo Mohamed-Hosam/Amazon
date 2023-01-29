@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AllFoodComponent } from './components/all-food/all-food.component';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -9,7 +11,13 @@ import { AllFoodComponent } from './components/all-food/all-food.component';
     AllFoodComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    BrowserModule,
+    RouterModule,
+    HttpClientModule
+  ],
+  exports:[
+    AllFoodComponent
   ]
 })
 export class FoodModule { }

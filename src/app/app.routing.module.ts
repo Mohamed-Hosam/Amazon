@@ -4,9 +4,9 @@ import { AllElectronicsComponent } from './electronic/components/all-electronics
 import { AllFoodComponent } from './food/components/all-food/all-food.component';
 
 const routes: Routes= [
-  {path: "electronics", component:AllElectronicsComponent},
   {path: "food", component:AllFoodComponent},
-  {path: "**", redirectTo: "electronics", pathMatch: "full"}
+  {path: "electronics", component:AllElectronicsComponent},
+  {path: "**", redirectTo: "food", pathMatch: "full"} //if the path is anything other than food or electronics it will be redirected to foodas default
 ];
 
 @NgModule({

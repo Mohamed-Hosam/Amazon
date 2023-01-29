@@ -10,6 +10,7 @@ export class ElectronicsService {
   constructor(private http:HttpClient) { }
 
   getAllElectronics(){
-    return this.http.get(environment.baseApi + 'electronic')
+    const queryString = (window.location.search); // to get the query parameters from the url
+    return this.http.get(environment.baseApi + 'electronic'+queryString)
   }
 }

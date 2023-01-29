@@ -10,6 +10,7 @@ export class FoodService {
   constructor(private http:HttpClient) { }
 
   getAllFood(){
-    return this.http.get(environment.baseApi + 'food')
+    const queryString = (window.location.search); // to get the query parameters from the url
+    return this.http.get(environment.baseApi + 'food'+queryString)
   }
 }
