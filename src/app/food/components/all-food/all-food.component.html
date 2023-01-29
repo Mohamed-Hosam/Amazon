@@ -1,0 +1,86 @@
+<div class="main">
+  <div class="header">
+    <div class="container">
+      <div class="page-header">
+        <div class="content">
+          <div class="header-text-and-supporting-text">
+            <p class="header-text">Food</p>
+            <p class="header-supporting-text">Welcome back, Olivia</p>
+          </div>
+        </div>
+      </div>
+      <div class="header-tabs-and-filters">
+        <div *ngIf="foodType == 'fruit'" class="header-button-group">
+          <button [routerLink]="['/food']" [queryParams]="{page: 1, type: 'fruit'}" class="header-fruits-button-choosen">
+            <span class="header-fruits-button-text-choosen">Fruits</span>
+          </button>
+          <button [routerLink]="['/food']" [queryParams]="{page: 1, type: 'vegetable'}" class="header-vegetables-button">
+            <span class="header-vegetables-button-text">Vegetables</span>
+          </button>
+        </div>
+        <div *ngIf="foodType == 'vegetable'" class="header-button-group">
+          <button [routerLink]="['/food']" [queryParams]="{page: 1, type: 'fruit'}" class="header-fruits-button">
+            <span class="header-fruits-button-text">Fruits</span>
+          </button>
+          <button [routerLink]="['/food']" [queryParams]="{page: 1, type: 'vegetable'}" class="header-vegetables-button-choosen">
+            <span class="header-vegetables-button-text-choosen">Vegetables</span>
+          </button>
+        </div>
+        <div class="header-actions">
+          <button class="header-sort-button">
+            <img src="/assets/img/filter-lines.png" alt="image" class="filter-lines-img">
+            <span class="header-sort-button-text">Sort By</span>
+          </button>
+          <div class="dropdown-content">
+            <button [routerLink]="['/food']" [queryParams]="{page: 1, type: foodType, sortBy: 'name'}" class="dropdown-content-button2">
+              <span class="header-sort-button-text">Name</span>
+            </button>
+            <button [routerLink]="['/food']" [queryParams]="{page: 1, type: foodType, sortBy: 'price'}">
+              <span class="header-sort-button-text">Price</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-container">
+        <table class="table">
+          <tr clas="table-content" *ngFor="let item of food">
+            <td class="table-name-area">
+              <span class="table-name-text">{{ item.name }}</span>
+            </td>
+            <td class="table-price-area">
+              <p class="table-price-text">${{ item.price }}</p>
+            </td>
+            <td class="table-buy-content">
+              <button onclick="alert('Item purchased successfully')" class="table-button">
+                <span class="table-button-text">Buy now</span>
+              </button>
+            </td>
+          </tr>
+          <div class="pagination">
+            <div class="pagination-previous-button">
+              <button [routerLink]="['/food']" [queryParams]="{page: previousPage, type:foodType}" class="pagination-previous-button">
+                <img src="/assets/img/arrow-left.png" alt="image" class="previous-button-img">
+                <span class="pagination-previous-button-text">Previous</span>
+              </button>
+            </div>
+            <div class="pagination-numbers-group" *ngFor="let item of pagingPages">
+              <button [routerLink]="['/food']" [queryParams]="{page: item, type:foodType}" class="pagination-number-button">
+                <div class="pagination-number-button-content">
+                  <p class="pagination-number-button-text">{{ item }}</p>
+                </div>
+              </button>
+            </div>
+            <div class="pagination-next-button">
+              <button [routerLink]="['/food']" [queryParams]="{page: nextPage, type:foodType}" class="pagination-next-button">
+                <span class="pagination-next-button-text">Next</span>
+                <img src="/assets/img/arrow-right.png" alt="image" class="next-button-img">
+              </button>
+            </div>
+          </div>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<div class="sidebar-navigation">
+  <div class="content">
+    <div class="nav">
+      <div class="sidebar-header">
+        <div class="sidebar-header-logo">
+          <div class="sidebar-header-logo-logowrap">
+            <img src="/assets/img/Group.png" alt="image" class="group-img">
+            <span class="sidebar-header-logo-logowrap-text">H!</span>
+            <span class="sidebar-header-logo-logowrap-text2">There.</span>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="model == 'food'" class="navigation">
+        <button routerLink="/food" [queryParams]="{page: 1, type: 'fruit'}" class="navigation-food-nav-item-base-choosen">
+          <div class="navigation-food-content">
+            <img src="/assets/img/shopping-bag-02.png" alt="image" class="shoppingbag-and-headphone-img">
+            <p class="navigation-food-text-choosen">Food</p>
+          </div>
+        </button>
+        <button routerLink="/electronics" (click)='changeModel()' [queryParams]="{page: 1}"class="navigation-electronics-nav-item-base">
+          <div class="navigation-electronics-content">
+            <img src="/assets/img/headphones-01.png" alt="image" class="shoppingbag-and-headphone-img">
+            <p class="navigation-electronics-text">Electronics</p>
+          </div>
+        </button>
+      </div>
+      <div *ngIf="model == 'electronics'" class="navigation">
+        <button routerLink="/food" (click)='changeModel()' [queryParams]="{page: 1, type: 'fruit'}" class="navigation-food-nav-item-base">
+          <div class="navigation-food-content">
+            <img src="/assets/img/shopping-bag-01.png" alt="image" class="shoppingbag-and-headphone-img">
+            <p class="navigation-food-text">Food</p>
+          </div>
+        </button>
+        <button routerLink="/electronics" [queryParams]="{page: 1}"class="navigation-electronics-nav-item-base-choosen">
+          <div class="navigation-electronics-content">
+            <img src="/assets/img/headphones-02.png" alt="image" class="shoppingbag-and-headphone-img">
+            <p class="navigation-electronics-text-choosen">Electronics</p>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-account">
+        <div class="sidebar-footer-avatar-label-group">
+          <img src="/assets/img/Avatar.png" alt="image" class="avatar-img">
+          <div class="sidebar-footer-avatar-text-and-supportingtext">
+            <div class="sidebar-footer-avatar-text">
+              <p>Olivia Rhye</p>
+            </div>
+            <div class="sidebar-footer-avatar-texsupport">
+              <p>Olivia@evarostudio.com</p>
+            </div>
+          </div>
+        </div>
+        <button onclick="alert('You have signed out')" class="exit-button">
+          <img src="/assets/img/log-out.png" alt="image" class="log-out-img">
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

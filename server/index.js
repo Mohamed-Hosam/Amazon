@@ -1,28 +1,17 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const app = express()
-// const passport = require('passport')
 
+const app = express()
 const path = require('path')
 const food = require("./routes/api/food");
 const electronic = require("./routes/api/electronic");
-// require('dotenv').config()
 
 // Init middleware
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
-// app.use(passport.initialize())
 
 // DB Config
 const db = require('./config/keys_dev').mongoURI
-// // Passport configuration
-//require('./config/passport')(passport)
-
-
-// mongoose.set('useNewUrlParser', true);
-// mongoose.set('useFindAndModify', false);
-// mongoose.set('useCreateIndex', true);
-// mongoose.set('useUnifiedTopology', true);
 
 // Connect to mongo
 mongoose
@@ -30,10 +19,7 @@ mongoose
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.log(err))
 
-app.use("/api/food", food);
-app.use("/api/electronic", electronic);
-
-  // added cors access
+// added cors access
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*')
   res.header('Access-Control-Allow-Credentials', 'true')
@@ -41,6 +27,9 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Headers', '*')
   next()
 })
+
+app.use("/api/food", food);
+app.use("/api/electronic", electronic);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'))

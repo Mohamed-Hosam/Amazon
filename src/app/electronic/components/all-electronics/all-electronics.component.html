@@ -1,0 +1,54 @@
+<div class="main">
+  <div class="header">
+    <div class="container">
+      <div class="page-header">
+        <div class="content">
+          <div class="header-text-and-supporting-text">
+            <p class="header-text">Electronics</p>
+            <p class="header-supporting-text">Welcome back, Olivia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-container">
+        <table class="table">
+          <tr clas="table-content" *ngFor="let item of electronics">
+            <td class="table-name-area">
+              <span class="table-name-text">{{ item.name }}</span>
+            </td>
+            <td class="table-price-area">
+              <p class="table-price-text">${{ item.price }}</p>
+            </td>
+            <td class="table-buy-content">
+              <button onclick="alert('Item purchased successfully')" class="table-button">
+                <span class="table-button-text">Buy now</span>
+              </button>
+            </td>
+          </tr>
+          <div class="pagination">
+            <div class="pagination-previous-button">
+              <button [routerLink]="['/electronics']" [queryParams]="{page: previousPage}" class="pagination-previous-button">
+                <img src="/assets/img/arrow-left.png" alt="image" class="previous-button-img">
+                <span class="pagination-previous-button-text">Previous</span>
+              </button>
+            </div>
+            <div class="pagination-numbers-group" *ngFor="let item of pagingPages">
+              <button [routerLink]="['/electronics']" [queryParams]="{page: item}" class="pagination-number-button">
+                <div class="pagination-number-button-content">
+                  <p class="pagination-number-button-text">{{ item }}</p>
+                </div>
+              </button>
+            </div>
+            <div class="pagination-next-button">
+              <button [routerLink]="['/electronics']" [queryParams]="{page: nextPage}" class="pagination-next-button">
+                <span class="pagination-next-button-text">Next</span>
+                <img src="/assets/img/arrow-right.png" alt="image" class="next-button-img">
+              </button>
+            </div>
+          </div>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

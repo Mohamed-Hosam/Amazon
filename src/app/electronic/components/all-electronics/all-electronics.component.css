@@ -1,0 +1,494 @@
+.main {
+  /* Main */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0px 48px;
+  gap: 32px;
+  width: 1160px;
+  height: 960px;
+  background: #fdfcfc;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+
+.header {
+  /* Header section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 1160px;
+  height: 798px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.container {
+  /* Container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 32px;
+  gap: 24px;
+  width: 982px;
+  height: 66px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.page-header {
+  /* Page header */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: 918px;
+  height: 66px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.content {
+  /* Content */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 918px;
+  height: 66px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.header-text-and-supporting-text {
+  /* Text and supporting text */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  width: 918px;
+  height: 66px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.header-text {
+  /* Text */
+  width: 918px;
+  height: 38px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  color: #101828;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.header-supporting-text {
+  /* Supporting text */
+  width: 918px;
+  height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.section {
+  /* Section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 975px;
+  height: 708px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.section-container {
+  /* Section Container */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 32px;
+  gap: 24px;
+  width: 975px;
+  height: 708px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.table {
+  /* Table */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 911px;
+  height: 708px;
+  background: #ffffff;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.table-content {
+  /* Content */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  width: 911px;
+  height: 648px;
+  background: #fdfcfc;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.table-name-area {
+  /* Table cell */
+  box-sizing: border-box;
+  align-items: flex-start;
+  padding: 16px 24px 16px 0px;
+  gap: 12px;
+  width: 582px;
+  height: 72px;
+  border-bottom: 1px solid #eaecf0;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.table-name-text {
+  /* Text */
+  width: 71px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #101828;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.table-price-area {
+  /* Table cell */
+  box-sizing: border-box;
+  align-items: center;
+  padding: 16px 24px;
+  width: 209px;
+  height: 72px;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.table-price-text {
+  /* Text */
+  width: 45px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #039855;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.table-buy-content {
+  /* Table cell */
+  box-sizing: border-box;
+  align-items: flex-end;
+  padding: 16px;
+  gap: 4px;
+  width: 120px;
+  height: 72px;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.table-button {
+  /* Button */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px;
+  gap: 8px;
+  width: 88px;
+  height: 36px;
+  background: #fdf8f5;
+  border: 1px solid #fdf2ec;
+  border-radius: 8px;
+}
+
+.table-button-text {
+  /* Text */
+
+  width: 60px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fe6215;
+}
+
+.pagination {
+  /* Pagination */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 911px;
+  height: 60px;
+  border-top: 1px solid #eaecf0;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.pagination-previous-button {
+  /* Button */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 86px;
+  height: 20px;
+  border: none;
+}
+
+.pagination-previous-button:active {
+  /* Button */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  background: #ddd;
+  width: 86px;
+  height: 20px;
+  border: none;
+}
+
+.pagination-previous-button:hover:not(:active) {
+  /* Button */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  background-color: #f9fafb;
+  width: 86px;
+  height: 20px;
+  border: none;
+}
+
+.previous-button-img {
+  /* arrow-left */
+  width: 20px;
+  height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.pagination-previous-button-text {
+  /* Text */
+  width: 58px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.pagination-numbers-group {
+  /* Pagination numbers */
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  width: 292px;
+  height: 40px;
+}
+
+.pagination-next-button {
+  /* Button */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 60px;
+  height: 20px;
+  border: none;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.pagination-next-button:active {
+  /* Button */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  background: #ddd;
+  width: 60px;
+  height: 20px;
+  border: none;
+}
+
+.pagination-next-button:hover:not(:active) {
+  /* Button */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  background-color: #f9fafb;
+  width: 60px;
+  height: 20px;
+  border: none;
+}
+
+.next-button-img {
+  /* arrow-right */
+  width: 20px;
+  height: 20px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.pagination-next-button-text {
+  /* Text */
+  width: 32px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.pagination-number-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  transition: background-color 0.3s;
+  display: inline-block;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.pagination-number-button:focus {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #ddd;
+  border: none;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.pagination-number-button:hover:not(:focus) {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #f9fafb;
+  border: none;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.pagination-number-button-content {
+  /* Content */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  border-radius: 20px;
+}
+
+.pagination-number-button-text {
+  /* Number */
+  width: 9px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #667085;
+}
