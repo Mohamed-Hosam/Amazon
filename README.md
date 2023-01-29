@@ -25,3 +25,41 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## The Database diagrams
+
+I used two schemas in my project ( Food and Electronic) as following
+ElectronicSchema {
+  name: {
+    type: String,
+    required: true
+  },
+  price: {
+    type: Number,
+    required: true
+  }
+}
+
+FoodSchema {
+  name: {
+    type: String,
+    required: true
+  },
+  type: {
+    type: String,
+    required: true
+  },
+  price: {
+    type: Number,
+    required: true
+  }
+}
+
+they can also be found in server/models
+
+## Extra working Functions in the project
+
+* Server side Pagination and the pages wrap around when exceeding the available pages
+* Hovering over sortBy drops down two options to sort with 
+* Sorting will be done ascendingly in order to do it descending it has to be done from the url by typing "http://localhost:4200/food?page=1&type=fruit&sortBy=name&ascending=false"
+* The exit button beside the username and email pops an alert
